@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en" id="html">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://kit.fontawesome.com/9b14ef0212.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Teko:wght@600&family=Work+Sans:wght@300&display=swap"
+        rel="stylesheet">
+</head>
+
+<body id="body">
+
+    <div id="loadingCont">
+        <div id="loading"></div>
+    </div>
+
+    <div id="cursor">
+    </div>
+
+    <div id="askCont">
+        <p>Turn on music?</p>
+        <button class="hoverEffect" id="yesBtn">Yes</button>
+        <br>
+        <button class="hoverEffect" id="noBtn">No</button>
+    </div>
+
+
+    <div id="vol" class="hoverEffect">
+        <i id="volon" class="fa-solid fa-volume-high"></i>
+        <i id="voloff" class="fa-solid fa-volume-xmark"></i>
+    </div>
+
+    <div id="infoCont">
+        <i id="info" class="fa-solid fa-circle-info hoverEffect"></i>
+        <i id="infoClose" class="fa-solid fa-circle-xmark hoverEffect"></i>
+    </div>
+
+    <img src="monkey_sign-removebg-preview.png" id="monkey" alt="">
+
+    <div id="backCont">
+        <i id="backBtn" class="fa-solid fa-circle-arrow-left hoverEffect"></i>
+    </div>
+
+
+    <div id="page1">
+        <div id="vid">
+            <video src="bg_video (1) (1) (1) (1) (1).mp4" autoplay loop muted></video>
+           </div>
+           
+        <div id="head">
+            <h1 id="headh1">ENDANGERED</h1>
+        </div>
+        <div id="paw">
+            <i id="pawBtn" class="fa-solid fa-paw hoverEffect"></i>
+        </div>
+    </div>
+
+    <div id="empty"></div>
+    <div id="no"></div>
+
+    <div id="scroll">
+        <div id="bar">
+            <div id="barVal"></div>
+        </div>
+
+        <div id="signs">
+            <img id="sign1" src="rhinophoto-removebg-preview.png" alt="">
+            <img id="sign2" src="elephant_photo-removebg-preview.png" alt="">
+            <img id="sign3" src="tigerphoto-removebg-preview.png" alt="">
+            <img id="sign4" src="sloth_photo-removebg-preview.png" alt="">
+            <img id="sign5" src="polarbearphoto-removebg-preview.png" alt="">
+            <img id="sign6" src="penguin_photo-removebg-preview.png" alt="">
+        </div>
+
+    </div>
+
+
+    <div id="leaves">
+        <img id="leaf_border" src="leaf_border-removebg-preview.png" alt="">
+        <img id="leaf_border_2" src="leaf_border-removebg-preview.png" alt="">
+    </div>
+
+    <div id="canvas"></div>
+
+    <div class="pages" id="page2">
+
+        <section class="name">
+            <a target="_blank"
+                href="https://www.worldwildlife.org/species/black-rhino#:~:text=Black%20rhinos%20remain%20critically%20endangered,rhinos%20were%20poached%20in%20Africa."
+                class="knowMore">
+                Black Rhino
+            </a>
+        </section>
+
+        <section class="allInfo">
+            <img class="panda" src="panda-removebg-preview.png" alt="">
+
+            <div class="detail">
+                Black rhinos remain critically endangered because of demand for rhino horns on the illegal international
+                market, mainly in Asia, where rhino horn is used for traditional medicine, and increasingly as a status
+                symbol to display success and wealth. Between 2008 and 2021, around 11,000 rhinos were poached in
+                Africa.
+            </div>
+
+        </section>
+
+
+    </div>
+
+    <div class="pages" id="page3">
+
+        <section class="name" >
+            <a class="knowMore" target="_blank" href="https://thailand.wcs.org/en-us/Wildlife/Asian-Elephant/psafe_param/1/gclid/Cj0KCQjwoK2mBhDzARIsADGbjeqYvWxP7RXOteJFLgA91I38YwmMSb07NQnjh_5AgJCjFC6xGeFfWwIaAreoEALw_wcB.aspx">
+                Asian Elephant
+
+            </a>
+        </section>
+
+        <section class="allInfo">
+            <img class="panda" src="panda-removebg-preview.png" alt="">
+
+            <div class="detail">
+                Since 1986, the Asian elephant has been listed as Endangered on the IUCN Red List as the wild population
+                has declined by at least 50% since the 1930s to 1940s, i.e. three elephant generations. The Asian
+                elephant is threatened by habitat loss, degradation and fragmentation.
+            </div>
+
+        </section>
+    </div>
+    <div class="pages" id="page4">
+        <section class="name">
+            <a class="knowMore" target="_blank" href="https://www.worldwildlife.org/species/sunda-tiger">Sunda Tiger</a>
+        </section>
+
+        <section class="allInfo">
+            <img class="panda" src="panda-removebg-preview.png" alt="">
+
+            <div class="detail">
+                The last of the Sunda island tigers—estimated to be fewer than 400 today—are holding on for survival in
+                the remaining patches of forest on the island of Sumatra. Accelerating deforestation and rampant
+                poaching mean this noble creature could end up extinct like its Javan and Balinese counterparts.
+            </div>
+
+        </section>
+
+    </div>
+    <div class="pages" id="page5">
+        <section class="name">
+            <a class="knowMore" href="https://slothconservation.org/?gad=1&gclid=Cj0KCQjwoK2mBhDzARIsADGbjeoKUHd21YRNBVpiZ_SPYwjgTRQqTNP6YM1cN5DI7oJnpQnenuYjOBgaAiqvEALw_wcB" target="_blank">Sloth</a>
+        </section>
+
+        <section class="allInfo">
+            <img class="panda" src="panda-removebg-preview.png" alt="">
+
+            <div class="detail">
+                Sloths are extremely vulnerable to deforestation. Most sloths are listed as least concern on the IUCN
+                redlist of threatened species. But threats in the form of some of the habitat loss and fragmentation and
+                the illegal wildlife trade still exist.
+            </div>
+
+        </section>
+
+    </div>
+    <div class="pages" id="page6">
+        <section class="name">
+            <a class="knowMore" href="https://faunalytics.org/what-happened-to-climate-change-cites-and-the-reconfiguration-of-polar-bear-conservation-discourse/?gad=1&gclid=Cj0KCQjwoK2mBhDzARIsADGbjeprD7d1e4Q-YCwUcML_OXdY4_9Dzr0CCPbCqFXz34FPBDZ6SzmWodAaAkDQEALw_wcB" target="_blank">Polar Bear</a>
+        </section>
+
+        <section class="allInfo">
+            <img class="panda" src="panda-removebg-preview.png" alt="">
+
+            <div class="detail">
+                Declines in polar bear fat storage have already been seen resulting in stress to the bears and sometimes
+                death. As the sea ice continues to decline this may also push bears inland to human populated areas. The
+                polar bear was the first mammal to be listed as Threatened due primarily to global warming.
+            </div>
+
+        </section>
+
+    </div>
+    <div class="pages" id="page7">
+        <section class="name">
+            <a class="knowMore" href="https://www.worldwildlife.org/species/penguin" target="_blank">Penguin</a>
+        </section>
+
+        <section class="allInfo">
+            <img class="panda" src="panda-removebg-preview.png" alt="">
+
+            <div class="detail">
+                Penguins are sadly one of the most threatened groups of seabirds, with half of the 18 species listed by
+                Birdlife as either Vulnerable or Endangered. While penguins are well adapted to their environments,
+                human impacts are hitting their homes too hard and too fast for them to cope.
+            </div>
+
+        </section>
+
+    </div>
+
+
+
+
+
+    <!-- <input type="range" value="100" id="prog">
+    <p id="val"></p> -->
+
+</body>
+
+<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/jquery.ripples@0.6.3/dist/jquery.ripples-min.min.js"></script> -->
+
+<script src="https://cdn.jsdelivr.net/npm/three@0.134.0/build/three.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/three@0.134.0/examples/js/loaders/RGBELoader.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/three@0.134.0/examples/js/loaders/GLTFLoader.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/three@0.134.0/examples/js/controls/OrbitControls.js"></script>
+<!-- <script src="https://cdn.jsdelivr.net/npm/yuka/build/yuka.js"></script> -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.8.0/gsap.min.js"></script>
+
+<script src="index.js"></script>
+
+</html>

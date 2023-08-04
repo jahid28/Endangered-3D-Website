@@ -1,0 +1,683 @@
+* {
+  padding: 0;
+  margin: 0;
+  cursor: none;
+}
+::-webkit-scrollbar{
+  width: 0px;
+}
+
+#loadingCont{
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  background-color: #304129;
+  display: grid;
+  place-items: center;
+  z-index: 105;
+}
+#loading{
+  text-shadow: 0 0 20px #e72323;
+  color: rgb(222, 80, 80);
+  font-size: 40vw;
+  font-family: "Teko", sans-serif;
+
+}
+
+
+#cursor {
+  position: fixed;
+  font-size: 40px;
+  width: 20px;
+  height: 20px;
+  border-radius: 100px;
+  pointer-events: none;
+  transform: translate(-50%, -50%);
+  z-index: 400;
+  color: rgb(106, 177, 106);
+  font-family: "Teko", sans-serif;
+  display: grid;
+  background-color: rgb(106, 177, 106);
+  transition: font-size linear .2s,width linear .2s, height linear .2s;
+  place-items: center;
+  /* mix-blend-mode: difference; */
+  /* border: 2px solid rgb(101, 145, 62); */
+  box-shadow: 0px 0px 20px 2px rgb(125, 255, 74);
+}
+/* #cursor i{
+  z-index: 103;
+} */
+
+#askCont{
+  position: fixed;
+  top: 33vh;
+  left: 33vw;
+  /* z-index: 166; */
+  background-color: #304129;
+  width: 30vw;
+  border: 4px solid rgb(110, 183, 110);
+  border-radius: 20px;
+  display: grid;
+  place-items: center;
+  height: 30vh;
+  padding: 20px;
+}
+
+#askCont p{
+  font-family: "Teko", sans-serif;
+color:rgb(110, 183, 110) ;
+font-size: 2rem;
+text-align: center;
+}
+
+#askCont button{
+  font-family: "Teko", sans-serif;
+background-color: rgb(110, 183, 110);
+  font-size: 2rem;
+  color: white;
+  text-align: center;
+  width: 30vw;
+  border-radius: 30px;
+  border: none;
+
+}
+
+#vid{
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  /* border: 10px solid red; */
+  top: 0;
+ 
+  z-index: -1;
+  overflow: hidden;
+  /* background-color: pink; */
+}
+#vid video{
+ 
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+
+}
+
+#page1 {
+  width: 100vw;
+  height: 100vh;
+  /* background: url(tree_background.png) no-repeat center; */
+  /* background-size: cover; */
+  z-index: -1;
+  position: fixed;
+  top: 0px;
+  transition: all ease-in-out 2s;
+  
+  display: grid;
+  place-items: center;
+}
+
+
+#head {
+  /* width: 100vw; */
+  /* height: 100vh; */
+  /* position: fixed; */
+  /* top: 0vh; */
+  z-index: 9;
+  transition: all ease-in-out 2s;
+
+  /* border: 20px solid red; */
+}
+
+h1 {
+  /* z-index: 10; */
+  transition: all linear 0.2s;
+  text-shadow: 0 0 20px #e72323;
+  color: rgb(222, 80, 80);
+  font-size: 16rem;
+  font-family: "Teko", sans-serif;
+  /* -webkit-text-stroke-color: rgb(222, 80, 80);
+    -webkit-text-stroke-width: 5px; */
+}
+
+#paw {
+  /* position: fixed; */
+  width: 100vw;
+  display: grid;
+  place-items: center;
+  margin-top: auto;
+  margin-bottom: 60px;
+  /* bottom: 200px; */
+  /* left: 40%; */
+  /* border: 2px solid red; */
+  z-index: 101;
+}
+#paw i {
+  border: 4px solid rgb(48, 65, 41);
+  font-size: 4rem;
+  color: rgb(48, 65, 41);
+  border-radius: 1000px;
+  padding: 10px;
+  background-color: rgb(166, 198, 163);
+  animation: paw infinite linear 1.5s;
+  position: relative;
+  /* top: 10vw; */
+}
+
+@keyframes paw {
+  0% {
+    top: 0;
+  }
+  50% {
+    top: 10px;
+  }
+  100% {
+    top: 0;
+  }
+}
+
+
+#vol {
+  position: fixed;
+  top: 2%;
+  left: 1%;
+  /* border: 2px solid red; */
+  z-index: 101;
+}
+
+#vol i {
+  font-size: 3rem;
+  color: rgb(48, 65, 41);
+  -webkit-text-stroke-color: rgb(166, 198, 163);
+  -webkit-text-stroke-width: 1px;
+}
+#infoCont {
+  position: fixed;
+  top: 2%;
+  right: 1%;
+  /* border: 2px solid red; */
+  z-index: 101;
+}
+
+#infoCont i {
+  font-size: 3rem;
+  color: rgb(48, 65, 41);
+  -webkit-text-stroke-color: rgb(166, 198, 163);
+  -webkit-text-stroke-width: 1px;
+}
+#backCont {
+  position: fixed;
+  top: 10%;
+  left: 1%;
+  /* border: 2px solid red; */
+  z-index: 101;
+}
+
+#backCont i {
+  font-size: 3rem;
+  color: #304129;
+  -webkit-text-stroke-color: #a6c6a3;
+  -webkit-text-stroke-width: 1px;
+}
+
+#monkey {
+  position: fixed;
+  top: -35rem;
+  width: 1000px;
+  z-index: 100;
+  left: 18%;
+  /* animation: ease-out; */
+  transition: all linear 2s;
+}
+
+#empty {
+  width: 100vw;
+  height: 100vh;
+  background-color: rgb(109, 205, 109);
+  z-index: -2;
+  position: fixed;
+  top: 0;
+ 
+}
+#no {
+  width: 100%;
+  height: 600vh;
+  background-color: transparent;
+  z-index: 100;
+  position: absolute;
+ 
+}
+
+
+#canvas {
+  position: fixed;
+  top: 20vh;
+  /* top: 0vh; */
+  left: 25vw;
+  height: 100vh;
+  width: 100vw;
+  z-index: 99;
+  /* border: 2px solid red; */
+}
+
+
+
+
+.name{
+  font-family: "Teko", sans-serif;
+  font-size: 6rem;
+  text-align: center;
+  /* margin: 10px 0px; */
+  text-shadow: 0 0 20px #e72323;
+  /* border: 2px solid red; */
+  /* width: fit-content; */
+  display: grid;
+  place-items: center;
+  margin-bottom: auto;
+  /* z-index: 100; */
+  
+  
+}
+.name a{
+  color: rgb(222, 80, 80);
+  text-decoration: none;
+  
+  /* border: 2px solid red; */
+}
+
+.allInfo{
+  display: flex;
+  align-items: center;
+  /* border: 2px solid red; */
+  width: fit-content;
+  margin-right: auto;
+  margin-top: -20rem;
+
+}
+
+.panda{
+  transform: scaleX(-1);
+  /* border: 2px solid red; */
+  width: 10vw;
+}
+.detail{
+  /* transform: scaleX(-1); */
+  border: 10px groove rgb(177, 94, 55);
+  padding: 10px;
+  font-size: 2rem;
+  background: url(wood-g2db6cf345_1280.jpg) no-repeat center;
+  background-size: cover;
+  color: white;
+  width: 40vw;
+  font-family: 'Work Sans', sans-serif;
+  /* width: 12rem; */
+}
+
+
+.pages {
+  width: 100%;
+  height: 100vh;
+  background-color: rgb(66, 92, 58);
+  z-index: 91;
+  position: fixed;
+  overflow: hidden;
+  top: 100vh;
+  transition: all ease-in-out 3s;
+  display: grid;
+  place-items: center;
+}
+
+
+
+#leaves{
+  position: fixed;
+  bottom: -10vw;
+  /* border: 2px solid red; */
+  display: flex;
+  z-index: 99;
+}
+#leaves img{
+  width: 50vw;
+}
+
+#leaf_border_2{
+  transform: scaleX(-1);
+}
+
+#scroll{
+  width: 100vw;
+  /* border: 2px solid red; */
+  position: fixed;
+  bottom: 80px;
+  z-index: 100;
+  display: grid;
+  place-items: center;
+  /* justify-content: center; */
+  /* align-items: center; */
+}
+
+#bar{
+width: 1000px;
+height: 7px;
+background-color: #080808;
+/* border: 1px solid black; */
+}
+#barVal{
+width: 0px;
+height: 7px;
+background-color: #63ea61;
+border-radius: 20px;
+
+}
+#signs{
+  /* border: 2px solid red; */
+  width: 1000px;
+display: grid;
+grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+grid-gap: 155px;
+position: absolute;
+}
+
+#signs img{
+  transition: all linear .4s;
+  width: 40px;
+ 
+border-radius: 100px;
+}
+
+#sign1.active{
+  transform: scale(1.5);
+box-shadow: 0px 0px 10px 0px rgb(105, 255, 75);
+}
+#sign2.active{
+  transform: scale(1.5);
+  box-shadow: 0px 0px 10px 0px rgb(105, 255, 75);
+}
+#sign3.active{
+  transform: scale(1.5);
+  box-shadow: 0px 0px 10px 0px rgb(105, 255, 75);
+}
+#sign4.active{
+  transform: scale(1.5);
+  box-shadow: 0px 0px 10px 0px rgb(105, 255, 75);
+}
+#sign5.active{
+  transform: scale(1.5);
+  box-shadow: 0px 0px 10px 0px rgb(105, 255, 75);
+}
+#sign6.active{
+  transform: scale(1.5);
+  box-shadow: 0px 0px 10px 0px rgb(105, 255, 75);
+}
+
+
+
+@media(max-width:1377px) {
+
+  h1 {
+   
+    font-size: 20vw;
+    
+  }
+
+  .allInfo{
+    /* margin-top: 0rem; */
+  
+  }  
+  .detail{
+    font-size: 1.7rem;
+  }
+
+  
+/* #canvas {
+  top: 20vh;
+  left: 25vw;
+} */
+
+#monkey {
+ 
+  width: 100vw;
+  left: 0vw;
+}
+
+
+}
+@media(max-width:1000px) {
+
+
+  .allInfo{
+    margin-top: auto;
+    margin-bottom: 20vw;
+  
+  }  
+  .detail{
+    font-size: 1.5rem;
+    width: 70vw;
+  }
+
+  
+  .panda{
+    width: 10vw;
+  }
+
+
+  #canvas {
+    top: 0vh;
+    /* top: 0vh; */
+    left: 0vw;
+
+  }
+  
+
+#bar{
+  width: 700px;
+  }
+  #signs{
+    width: 700px;
+  grid-gap: 95px;
+ 
+  }
+  .name{
+    
+    font-size: 6rem;
+   /* border: 2px solid red; */
+   position: relative;
+   top: -20px;
+    
+    
+  }
+  /* #paw {
+    position: relative;
+    top: 14vw;
+  } */
+
+  #askCont{
+    width: 60vw;
+    left: 15vw;
+
+  }
+
+  #askCont button{
+    width: 50vw;
+  }
+  
+  
+
+
+}
+
+@media(max-width:750px) {
+
+  /* .allInfo{
+    margin-top: 40vw;
+  
+  }   */
+  /* .detail{
+    font-size: 1.5rem;
+    width: 70vw;
+  } */
+
+  
+  /* .panda{
+    width: 10vw;
+  } */
+
+  
+/* #canvas {
+  top: -6vw;
+  border: 2px solid red;
+  left: 0vw;
+} */
+
+#bar{
+  width: 500px;
+  }
+  #signs{
+    width: 500px;
+  grid-gap: 56px;
+ 
+  }
+  /* .name{
+    
+    font-size: 6rem;
+   border: 2px solid red;
+   position: relative;
+   top: -20px;
+    
+    
+  } */
+  /* #paw {
+    position: relative;
+    top: 14vw;
+  } */
+
+}
+
+@media(max-width:550px) {
+
+  /* .allInfo{
+    margin-top: 30vh;
+  
+  }   */
+  .detail{
+    font-size: 1.2rem;
+    /* width: 70vw; */
+  }
+
+  
+  /* .panda{
+    width: 10vw;
+  } */
+
+  
+/* #canvas {
+
+  top: -6vw;
+  border: 2px solid red;
+  left: 0vw;
+} */
+
+#bar{
+  width: 400px;
+  height: 5px;
+  }
+  #barVal{
+    height: 5px;
+  }
+  #signs{
+    width: 400px;
+  grid-gap: 46px;
+ 
+  }
+
+  #signs img{
+    width: 30px;
+   
+  }
+
+  /* .name{
+    
+    font-size: 6rem;
+   border: 2px solid red;
+   position: relative;
+   top: -20px;
+    
+  } */
+  /* #paw {
+    top: 28vw;
+  } */
+  #vol i {
+    font-size: 2rem;
+  }
+  #infoCont i {
+    font-size: 2rem;
+  }
+  #backCont i {
+    font-size: 2rem;
+  }
+
+}
+@media(max-width:405px) {
+
+  /* .allInfo{
+    margin-top: 40vh;
+  
+  }   */
+  .detail{
+    font-size: 1rem;
+    /* width: 70vw; */
+  }
+
+  
+  /* .panda{
+    width: 10vw;
+  } */
+
+  
+/* #canvas {
+
+  top: -6vw;
+  border: 2px solid red;
+  left: 0vw;
+} */
+
+#bar{
+  width: 300px;
+  }
+  
+  #signs{
+    width: 300px;
+  grid-gap: 32px;
+ 
+  }
+
+  #signs img{
+    width: 25px;
+   
+  }
+
+  .name{
+    
+    font-size: 4rem;
+   /* border: 2px solid red;
+   position: relative; */
+   top: -18px;
+    
+    
+  }
+  #paw i {
+    font-size: 3rem;
+  }
+  /* #paw {
+    top: 28vw;
+  }
+  #vol i {
+    font-size: 2rem;
+  }
+  #infoCont i {
+    font-size: 2rem;
+  }
+  #backCont i {
+    font-size: 2rem;
+  } */
+
+}
